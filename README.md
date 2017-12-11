@@ -1,7 +1,7 @@
 # A6: Final Project Report
 # User Churn Prediction
 ## Project Goal
-In this project, we use machine learning models to identify customers who are likely to stop using telecommunication service in the future. Furthermore, we will analyze top factors that influence user retention. 
+In this project, we use machine learning models to identify customers who are likely to stop using telecommunication service in the future. Furthermore, we analyze top factors that influence user retention. 
 
 ## Motivation
 Motivation of the study is to find if we can predict user behaviors and check the accuracy of prediction. The second motivation is to understand the reasons behind users' behaviors. In the future, service providers can use the results to improve their service, attract and retain more customers to stay in the business.
@@ -11,8 +11,8 @@ Motivation of the study is to find if we can predict user behaviors and check th
 * Question 2: What are the top factors affecting users' decision to continue using the service or not?
 
 ## Hypothesis
-* Hypothesis 1: we can use past user behaviors to predict future user churn decision on cell phone plan usage.
-* Hypothesis 2: users with similar characteristics (e.g. gender, age, location) will have similar behaviors when using the service. So that we can use data from some users to predict other the behavior of similar users.
+* Hypothesis 1: we can use past usage varaibles like total_day_minutes, total_day_calls, total_day_charge, total_eve_minutes etc. to predict future user churn decision on cell phone plan usage.
+* Hypothesis 2: users with similar characteristics (e.g. gender, age, location) will have similar behaviors when using the service. So that we can use data from some users to predict the behavior of similar users.
 
 ## Data Source and Data License
 Data is from [UIC machine learning repository](https://archive.ics.uci.edu/ml/datasets.html).
@@ -54,27 +54,25 @@ The analytical process is planed as follow:
 * Step 4: Feature Selection and Tuning
 * Step 5: Conclusion
 
-Step 1: the purpose of this step is to understand the dataset and clean messy data. To understand the dataset, the plan is to take a slice of data and simply examine the values; also various data visualizations are used, for example, scatter plot and box plot, to check data distribution. To clean messy data, the step checks missing data, identify outliers, and manually split, combine, and change some data field.
+Step 1: the purpose of this step is to understand the dataset and clean messy data. To understand the dataset, we take a slice of data and simply examine the values; also various data visualizations are used, for example, scatter plot and box plot, to check data distribution. To clean messy data, this step checks missing data, identify outliers, and manually split, combine, and change some data field.
 
-Step 2: because there are categorical features in the dataset, step 2 includes labelling categorical variables, maybe using one hot encoding. There are also some fields does not sound related to the output. An analysis will be needed if include the fields or not in the model. Transformation of these fields may be useful. Lastly, scaling features to normal is needed before feeding the features into the model.
+Step 2: because there are categorical features in the dataset, step 2 includes labelling categorical variables, using one hot encoding. There are also some fields not related to the output. An analysis is performed to decide if include the fields in the model. Transformation of these fields are needed. Lastly, scaling features to normal is needed before feeding the features into the model.
 
 Step 3: this is the most important of the model. I started with the simple linear regression, and then try Logistic regression, K-nearest neighbor (k-NN), and Random Forest algorithms. I evaluated the results using Confusion Matrix.
 
 Step 4: in this step, I tuned model parameters and select features. Feature importance are also calculated, and then be used to answer the second research question, which factors are influential on user decisions.
 
-Step 5: this step including discussion of the model and make a conclusion. This is a more qualitative step and focuses on making sense out of the model. Human-centered factors are also be analyzed and discussed in this step. 
+Step 5: this step including discussion of the model and make a conclusion. This is a more qualitative step and focuses on making sense out of the model. Human-centered factors are also analyzed and discussed in this step. 
 
 ## Limitations and Unknowns
 ### Validity of the dataset
-The Customer churn data is commonly used machine learning dataset. The data files state that the data are "artificial based on claims similar to real world". Little is known on how the dataset is simulated/collected and processed. The representativeness and validity of the dataset needs a further analysis.
+The Customer churn data is commonly used machine learning dataset. The data files state that the data are "artificial based on claims similar to real world". Little is known on how the dataset is simulated/collected and processed. Based on the analysis in step 1, the dataset is in a really good quality. There are few outliers and missing data. Variables follow near normal distributions. The quality of the dataset looks too good to be a reprensentive of real data. The validity and representative of the dataset is under doubt.
 
 ### Size of the Dataset
-There are 5000 observations in the main churn dataset. It is not a huge dataset. The size needs to be taken into consideration in avoid of overfitting or too complicated model.
-
+There are 5000 observations in the main churn dataset. It is not a huge dataset. Really complicated model like Neural Network does not work on this dataset.
 
 ### Potential Additional Datasets
 Due to the discussion above, it may be useful to include additional datasets into the study. These datasets could be similar data from sources with more information on the background, a larger dataset, or dataset which can provides additional features. 
-
 
 ## Human-centered Aspects
 I consider the project as a human-centered data analysis on human produced data but without a direct contact with human. Combing the quantitative analysis methods (data analysis and machine learning) with some qualitative studies, like survey with telecommunication service users, would be optimal. Especially one purpose of the study is to understand service users, and figure out why they would continue using the service or not. What would be more straight forward than asking the users' opinions?
@@ -85,7 +83,7 @@ Unfortunately, interview with users is out of the scope of the final project. In
 ## References 
 [UW HCDS Class](https://wiki.communitydata.cc/HCDS_(Fall_2017))
 
-[Assignment 3](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments)
+[Assignment 6](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments)
 
 [Definition of Customer Churn](https://en.wikipedia.org/wiki/Customer_attrition)
 

@@ -1,3 +1,3 @@
-In this project, we use machine learning models to identify customers who are likely to stop using telecommunication service in the future. Furthermore, we will analyze top factors that influence user retention.
+In this project, we use machine learning models to identify customers who are likely to stop using telecommunication service in the future. Furthermore, we analyze top factors that influence user retention.
 
 We found past user behaviors can effectively predict future customer churn decision. Phone plan usage features related to calls (e.g. total_day_charge) has a larger effect on user decision compared to usage features related to text, voice mail, etc. Top factors affecting users' decision to continue using the service or not are: total_day_minutes, total_day_charge, number_customer_service_calls, and intl_plan.
