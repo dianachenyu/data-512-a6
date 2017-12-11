@@ -1,4 +1,4 @@
-# A6: Final project report
+# A6: Final Project Report
 # User Churn Prediction
 ## Project Goal
 In this project, we use machine learning models to identify customers who are likely to stop using telecommunication service in the future. Furthermore, we will analyze top factors that influence user retention. 
